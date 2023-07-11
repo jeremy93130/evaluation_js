@@ -1,0 +1,445 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* HEADER NAV UL LI  */
+
+header {
+    height: 900px;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#dropUp {
+    padding-right: 25px;
+    position: absolute;
+    right: 0;
+}
+
+#dropUp>ul {
+    z-index: 1;
+}
+
+.dropDown {
+    display: none;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 2;
+}
+
+.dropDown ul {
+    background-color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dropDown>ul>li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.dropDown>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Titres et inputs */
+
+/* .flex_header {
+    height: 100%;
+} */
+
+.flex_header h1 {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: 36%;
+}
+
+.flex_header p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 120px;
+    z-index: 0;
+}
+
+/* Formulaire */
+
+.form {
+    position: absolute;
+    bottom: 50px;
+    left: 22%;
+    display: flex;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 5px;
+}
+
+input {
+    margin: 0 20px;
+}
+
+
+
+
+
+/* bouton valider */
+.valider {
+    margin: 0;
+    padding: 10px 60px;
+    background-color: #5ba255bd;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+
+
+/* ****************MAIN************* */
+/* section voitures */
+
+main>section {
+    width: 1100px;
+    margin: auto;
+}
+
+.recherchePrix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recherchePrix span {
+    font-weight: bold;
+}
+
+/* div globale voiture et text */
+.flex {
+    display: flex;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+    padding: 30px 0;
+}
+
+/* Div voiture 1  */
+.voiture {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+#voiture1 {
+    background: url(../img/vehicule1.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+}
+
+#voiture2 {
+    background: url(../img/vehicule2.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+}
+
+#voiture3 {
+    background: url(../img/vehicule3.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+}
+
+#voiture4 {
+    background: url(../img/vehicule4.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+}
+
+#voiture5 {
+    background: url(../img/vehicule1.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+}
+
+#voiture6 {
+    background: url(../img/vehicule2.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+}
+
+#voiture7 {
+    background: url(../img/vehicule3.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+}
+
+/* Div Text */
+.text {
+    margin: 40px 0 40px 90px;
+}
+
+.text h2 {
+    font-size: 20px;
+}
+
+.text p {
+    font-size: 11px;
+    margin: 5px 0;
+}
+
+/* bouton reserver et payer */
+.greenButton {
+    background-color: #429842;
+    padding: 5px 10px;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+
+
+/* Div cachée */
+.noShow {
+    display: none;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+footer>div:not(:last-child) {
+    width: 200px;
+    margin: 0 70px;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer>div:last-child>h2,
+footer>div:last-child>p {
+    margin: 10px 0;
+}
+
+@media(max-width:1426px) {
+    .form {
+        display: block;
+    }
+
+    .form input {
+        margin: 0 5px;
+    }
+
+    input.valider {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width: 1110px) {
+
+    header {
+        background-position: right 80% bottom 30%;
+    }
+
+    .flex_header h1 {
+        left: 25%;
+    }
+
+    .flex_header p {
+        left: 33%;
+    }
+
+    main>section>.recherchePrix {
+        margin: 0;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .text {
+        margin: 20px 0 20px 10px;
+    }
+
+    main>section {
+        width: 100%;
+    }
+
+    .flex {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        left: 15%;
+    }
+
+    div.text h2,
+    div.text p {
+        display: none;
+    }
+}
+
+@media (max-width: 890px) {
+    header {
+        height: 600px;
+    }
+
+    .form {
+        left: 50px;
+        width: 90%;
+    }
+
+    form {
+        display: block;
+        /* width: 100%; */
+        padding: 10px 10px 10px 0;
+    }
+
+    .form input {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .text {
+        margin: auto;
+    }
+}
+
+@media(max-width: 690px) {
+    .flex_header h1 {
+        left: 15%;
+    }
+
+    .flex_header p {
+        left: 26%;
+    }
+
+    footer {
+        align-items: center;
+    }
+
+    .textFooter h3 {
+        font-size: 12px;
+    }
+
+    .textFooter p {
+        font-size: 10px;
+    }
+}

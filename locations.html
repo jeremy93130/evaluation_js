@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2e186b2d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/locations.css" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <header id="banniere">
+      <nav>
+        <button class="navbar-toggler-icon" id="dropUp">
+          <img src="/img/menu.svg.png" alt="" />
+        </button>
+        <div class="dropDown">
+          <ul>
+            <li><a href="">Louer une voiture</a></li>
+            <li><a href="">Louer un utilitaire</a></li>
+            <li><a href="">Réserver un chauffeur</a></li>
+            <li><a href="">Découvrez nos agences</a></li>
+            <li><a href="">Mon compte</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex_header">
+        <div class="title">
+          <h1>Bienvenue à bord</h1>
+          <p>Location de voiture 24h/24 et 7j/7</p>
+        </div>
+        <div class="form">
+          <form>
+            <input type="text" placeholder="Adresse de départ" />
+            <input type="text" placeholder="Début de location" />
+            <input type="text" placeholder="Fin de location" />
+          </form>
+          <input type="submit" value="Valider ma recherche" class="valider" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="recherchePrix">
+          <p><span>7</span> résultats</p>
+          <select>
+            <option value="prix croissant">Prix croissant</option>
+            <option value="prix decroissant">Prix décroissant</option>
+            <option value="meilleures ventes">Meilleures ventes</option>
+          </select>
+        </div>
+
+        <!-- Voiture numéro 1 -->
+        <div class="flex">
+          <div class="voiture">
+            <i
+              class="fa-solid fa-chevron-left leftOne"
+              style="color: #000000"
+            ></i>
+            <div id="voiture1"></div>
+            <i
+              class="fa-solid fa-chevron-right rightOne"
+              style="color: #000000"
+            ></i>
+          </div>
+          <div class="text">
+            <h2>Peugeot 208</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5km
+              supplémentaires).
+            </p>
+            <p>999 € - Agence de Paris</p>
+            <button class="greenButton">Réserver et Payer</button>
+          </div>
+        </div>
+
+        <!-- Voiture numéro 2 -->
+        <div class="flex">
+          <div class="voiture">
+            <i
+              class="fa-solid fa-chevron-left leftTwo"
+              style="color: #000000"
+            ></i>
+            <div id="voiture2"></div>
+            <i
+              class="fa-solid fa-chevron-right rightTwo"
+              style="color: #000000"
+            ></i>
+          </div>
+          <div class="text">
+            <h2>Ford Focus</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5km
+              supplémentaires).
+            </p>
+            <p>999 € - Agence de Paris</p>
+            <button class="greenButton">Réserver et Payer</button>
+          </div>
+        </div>
+
+        <!-- Voiture numéro 3 -->
+        <div class="flex">
+          <div class="voiture">
+            <i
+              class="fa-solid fa-chevron-left leftThree"
+              style="color: #000000"
+            ></i>
+            <div id="voiture3"></div>
+            <i
+              class="fa-solid fa-chevron-right rightThree"
+              style="color: #000000"
+            ></i>
+          </div>
+          <div class="text">
+            <h2>Audi A1</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5km
+              supplémentaires).
+            </p>
+            <p>1 100€ - Agence de Paris</p>
+            <button class="greenButton">Réserver et Payer</button>
+          </div>
+        </div>
+
+        <!-- Voiture numéro 4 -->
+        <div class="flex">
+          <div class="voiture">
+            <i
+              class="fa-solid fa-chevron-left leftFour"
+              style="color: #000000"
+            ></i>
+            <div id="voiture4"></div>
+            <i
+              class="fa-solid fa-chevron-right rightFour"
+              style="color: #000000"
+            ></i>
+          </div>
+          <div class="text">
+            <h2>Opel Mokka</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5km
+              supplémentaires).
+            </p>
+            <p>1 150 € - Agence de Paris</p>
+            <button class="greenButton">Réserver et Payer</button>
+          </div>
+        </div>
+
+        <!-- Div cachée jusqu'au scroll -->
+        <div class="noShow">
+          <!-- Voiture 5 -->
+          <div class="flex">
+            <div class="voiture">
+              <i
+                class="fa-solid fa-chevron-left leftFive"
+                style="color: #000000"
+              ></i>
+              <div id="voiture5"></div>
+              <i
+                class="fa-solid fa-chevron-right rightFive"
+                style="color: #000000"
+              ></i>
+            </div>
+            <div class="text">
+              <h2>Peugeot 208</h2>
+              <p>
+                Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5km
+                supplémentaires).
+              </p>
+              <p>999 € - Agence de Paris</p>
+              <button class="greenButton">Réserver et Payer</button>
+            </div>
+          </div>
+
+          <!-- Voiture 6 -->
+          <div class="flex">
+            <div class="voiture">
+              <i
+                class="fa-solid fa-chevron-left leftSix"
+                style="color: #000000"
+              ></i>
+              <div id="voiture6"></div>
+              <i
+                class="fa-solid fa-chevron-right rightSix"
+                style="color: #000000"
+              ></i>
+            </div>
+            <div class="text">
+              <h2>Peugeot 208</h2>
+              <p>
+                Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5km
+                supplémentaires).
+              </p>
+              <p>999 € - Agence de Paris</p>
+              <button class="greenButton">Réserver et Payer</button>
+            </div>
+          </div>
+
+          <!-- Voiture 7 -->
+          <div class="flex">
+            <div class="voiture">
+              <i
+                class="fa-solid fa-chevron-left leftSeven"
+                style="color: #000000"
+              ></i>
+              <div id="voiture7"></div>
+              <i
+                class="fa-solid fa-chevron-right rightSeven"
+                style="color: #000000"
+              ></i>
+            </div>
+            <div class="text">
+              <h2>Peugeot 208</h2>
+              <p>
+                Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5km
+                supplémentaires).
+              </p>
+              <p>999 € - Agence de Paris</p>
+              <button class="greenButton">Réserver et Payer</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div><img src="./img/agence.jpg" alt="Agence de Paris" /></div>
+      <div class="textFooter">
+        <h3>Notre Agence de <span>Paris</span></h3>
+        <p>300 boulevard de vaugirard, 75015, Paris</p>
+        <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+        <p>01 49 78 21 33</p>
+        <p><a href="mailto:contact@vtc.com">contact@vtc.com</a></p>
+      </div>
+    </footer>
+    <script src="/js/locations.js"></script>
+  </body>
+</html>
