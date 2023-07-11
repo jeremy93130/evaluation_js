@@ -180,8 +180,7 @@ $(".rightSeven").on("click", () => {
 // Div lors du scroll :
 
 $(document).scroll(() => {
-  console.log(window.scrollY);
-  if (window.scrollY >= 1384) {
+if (window.scrollY >= 1384) {
     $(".noShow").fadeIn(5000);
   } else {
     $(".noShow").fadeOut(1000);

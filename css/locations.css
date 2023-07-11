@@ -398,6 +398,15 @@ footer>div:last-child>p {
 @media (max-width: 890px) {
     header {
         height: 600px;
+        background-position: left;
+    }
+
+    .flex_header h1 {
+        left: 18%;
+    }
+
+    .flex_header p {
+        left: 28%;
     }
 
     .form {
@@ -406,19 +415,37 @@ footer>div:last-child>p {
     }
 
     form {
-        display: block;
+        display: flex;
         /* width: 100%; */
         padding: 10px 10px 10px 0;
     }
 
     .form input {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
+        width: 25%;
+        margin: 10px auto;
     }
 
     .text {
         margin: auto;
+    }
+
+    input.valider {
+        width: 100%;
+        margin: 0;
+    }
+
+    main>section {
+        margin-top: 40px;
+    }
+
+    main>section>.recherchePrix {
+        justify-content: space-around;
+    }
+
+    select {
+        padding: 5px 0;
+        background-color: lightgray;
+        border-radius: 5px;
     }
 }
 
@@ -442,4 +469,50 @@ footer>div:last-child>p {
     .textFooter p {
         font-size: 10px;
     }
+}
+
+@media(max-width: 500px) {
+    .flex_header h1 {
+        font-size: 30px;
+        left: 22%;
+        margin: 0;
+    }
+
+    .flex_header p {
+        font-size: 18px;
+        left: 16%;
+        margin: 0;
+    }
+
+    form {
+        display: block;
+    }
+
+    .form input {
+        display: block;
+        width: 100%;
+    }
+
+    .form {
+        left: 20px;
+
+    }
+
+    #voiture1,
+    #voiture2,
+    #voiture3,
+    #voiture4,
+    #voiture5,
+    #voiture6,
+    #voiture7{
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    
+
+
+
 }
